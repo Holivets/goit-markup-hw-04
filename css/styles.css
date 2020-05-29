@@ -272,6 +272,9 @@ footer {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+.contacts-footer.tel {
+  margin-bottom: 28px;
+}
 .contacts-footer:hover,
 .contacts-footer:focus {
   color: var(--accent-color);
