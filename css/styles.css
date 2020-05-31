@@ -21,7 +21,7 @@ a {
   display: block;
   text-decoration: none;
 }
-img:not(.contacts) {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -99,7 +99,10 @@ nav {
 .contacts-header:focus {
   color: var(--accent-color);
 }
-
+.contacts-header .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* hero */
 .hero {
   background-image: linear-gradient(
@@ -167,13 +170,17 @@ nav {
   display: flex;
 }
 .advantages-list li {
-  width: 278px;
+  width: 270px;
 }
-/* для декількох секція марджин-він всюди однаковий-сенс повторюватись */
 .flex > li:not(:last-child) {
   margin-right: 30px;
 }
-
+.advantages-list .icon {
+  display: block;
+  padding: 25px 102px;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+}
 .advantages-list .title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -223,6 +230,12 @@ nav {
 .team.flex {
   display: flex;
 }
+.team > li {
+  width: 270px;
+  background-color: var(--secondary-title-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
 .member-name {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -233,11 +246,9 @@ nav {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 .member-position {
   margin-top: 0;
-  margin-bottom: 30px;
-
+  margin-bottom: 16px;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -246,11 +257,44 @@ nav {
 }
 .contacts-flex {
   display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 24px;
+}
+.contacts-flex a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+}
+.contacts-flex a:hover,
+.contacts-flex a:focus {
+  background-color: var(--accent-color);
+}
+.contacts-flex .icon {
+  fill: #afb1b8;
+}
+.contacts-flex .icon:hover,
+.contacts-flex .icon:focus {
+  fill: var(--secondary-title-color);
 }
 /* секція постійних клієнтів-тут йдуть картинки */
 .clients.flex {
   display: flex;
   justify-content: space-evenly;
+}
+.clients .icon {
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 20px 0px;
+}
+
+.clients .icon:hover,
+.clients .icon:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 /* footer */
 footer {
@@ -303,6 +347,28 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.socials {
+  display: flex;
+}
+.socials li:not(:last-child) {
+  margin-right: 10px;
+}
+.socials a {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+}
+.socials a:hover,
+.socials a:focus {
+  background-color: var(--accent-color);
+}
+.socials .icon {
+  fill: var(--secondary-title-color);
+}
 .subscribe-button {
   display: inline-block;
   border: 0;
@@ -318,12 +384,6 @@ footer {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-}
-.subscribe-button::before {
-  content: '';
-  background-image: url(../images/smartphone.jpg);
-  height: 24px;
-  width: 24px;
 }
 .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -376,6 +436,11 @@ footer {
   margin-bottom: 30px;
   /* правий margin я поставив вище в усіх flex>li */
 }
+.work li:hover,
+.work li:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 .work li:nth-child(3n) {
   margin-right: 0;
 }
@@ -386,7 +451,6 @@ footer {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-  border-radius: 0 0 5px 5px;
 }
 .examples-name {
   margin-top: 0;
