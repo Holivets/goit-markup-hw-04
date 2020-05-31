@@ -115,6 +115,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: rgba(47, 48, 58);
   text-align: center;
 }
@@ -349,20 +350,18 @@ footer {
   margin-right: 10px;
 }
 .socials a {
-  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 50px;
   width: 44px;
   height: 44px;
+  fill: var(--secondary-title-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .socials a:hover,
 .socials a:focus {
   background-color: var(--accent-color);
-}
-.socials .icon {
-  fill: var(--secondary-title-color);
 }
 .subscribe-button {
   display: inline-block;
