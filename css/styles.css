@@ -267,16 +267,11 @@ nav {
   border-radius: 50px;
   width: 44px;
   height: 44px;
+  fill: #afb1b8;
 }
 .contacts-flex a:hover,
 .contacts-flex a:focus {
   background-color: var(--accent-color);
-}
-.contacts-flex .icon {
-  fill: #afb1b8;
-}
-.contacts-flex .icon:hover,
-.contacts-flex .icon:focus {
   fill: var(--secondary-title-color);
 }
 /* секція постійних клієнтів-тут йдуть картинки */
