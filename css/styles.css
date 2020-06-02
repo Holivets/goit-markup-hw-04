@@ -281,6 +281,7 @@ nav {
   justify-content: space-evenly;
 }
 .clients .icon {
+  display: block;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -412,6 +413,7 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  cursor: pointer;
 }
 .filter-buttons:hover,
 .filter-buttons:focus {
